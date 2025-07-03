@@ -3,21 +3,18 @@ import "@/app/globals.css"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ThemeProvider } from "@/components/theme-provider"
-import { Inter } from "next/font/google"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "YouTube 英文视频 → 中文深度长文 | 信息获取效率工具",
   description:
     "英语是世界最好的信息源，阅读是最快的吸收信息方式。一行命令，将 YouTube 英文视频转换为可收藏的中文深度内容。",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+      <body className="bg-white text-gray-900 antialiased font-sans">
         {/* ----  主题切换 (浅/深色) ---- */}
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {/* ---------- HEADER ---------- */}
