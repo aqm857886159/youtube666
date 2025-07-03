@@ -11,11 +11,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "assets.basehub.com",
+        hostname: "youtube.com",
       },
       {
         protocol: "https",
-        hostname: "basehub.earth",
+        hostname: "img.youtube.com",
       },
     ],
   },
